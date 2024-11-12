@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import './style/dropdown.css';
-import { LuSettings2 } from "react-icons/lu";
 
 function DisplayDropdown({ grouping, setGrouping, ordering, setOrdering }) {
   const [visible, setVisible] = useState(false);
