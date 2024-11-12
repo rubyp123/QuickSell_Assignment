@@ -11,7 +11,7 @@ function Column({ tickets, grouping, groupBy, userIdToData }) {
         if (grouping === "status") return groupBy;
         if (grouping === "priority") return groupBy;
         if (grouping === "user") return userIdToData[groupBy].name;
-    }, [grouping, groupBy]);
+    }, [grouping, groupBy,userIdToData]);
 
     const icon = useMemo(() => {
         if (grouping === "status") return getStatusIcon(groupBy);
